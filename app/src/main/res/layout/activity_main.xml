@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10sp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter details of Students"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40sp"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:padding="10sp"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Dept :"
+            android:padding="10sp"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/dept_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Roll No :"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/roll_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textSize="18sp"
+            android:padding="10sp"/>
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:padding="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Gender :"
+            android:textSize="18sp"
+            android:padding="10sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:padding="10sp"
+                    android:layout_marginLeft="20sp"
+                    android:textSize="18sp"/>
+                <Switch
+                    android:id="@+id/gender_sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="18sp"
+                    android:padding="10sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="upload"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Records"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        android:onClick="onDisplayButtonPressed"
+        android:padding="10sp"
+        android:textSize="20sp"/>
+</LinearLayout>
+
