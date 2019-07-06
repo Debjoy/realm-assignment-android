@@ -29,6 +29,7 @@
             android:textSize="18sp"/>
         <EditText
             android:id="@+id/name_et"
+            android:hint="eg. Keanu Reaves"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10sp" />
@@ -47,6 +48,7 @@
         <EditText
             android:id="@+id/dept_et"
             android:layout_width="match_parent"
+            android:hint="eg. CSE"
             android:layout_height="wrap_content"
             android:padding="10sp" />
     </LinearLayout>
@@ -67,6 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:hint="eg. 13"
             android:padding="10sp"/>
     </LinearLayout>
     <LinearLayout
@@ -85,6 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
+            android:hint="eg. 9674069xxx"
             android:padding="10sp" />
     </LinearLayout>
     <LinearLayout
